@@ -67,9 +67,7 @@ const zooAnimals = [
   function animalNames(zooArray){
     let displayNames = [];
     
-    zooArray.forEach(function(item){
-        displayNames.push(`name: ${item.animal_name}, scientific: ${item.scientific_name}`);
-    })
+    zooArray.forEach((item) => displayNames.push(`name: ${item.animal_name}, scientific: ${item.scientific_name}`))
 
     return displayNames;
   }
@@ -107,9 +105,7 @@ const zooAnimals = [
   */
 
   function USApop(zooArray){
-    return zooArray.reduce(function(total, item){
-      return total += item.population;
-    },0);
+    return zooArray.reduce((total, item) => total += item.population,0);
   }
   
   
