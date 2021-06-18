@@ -16,7 +16,7 @@ function myFunction() {
 myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-
+// 1. The nested function is able to access the variable internal because it is a closure.  Scope allows us to reach "up" to reference variables but not down.
 
 
 
@@ -28,9 +28,17 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
+function summation(number) {
+  let total = 0;
 
+  for(let i = number; i > 0; i--) {
+    function counter() {
+      return total+= i;
+    }
+    counter();
+  }
+
+  return total;
   }
  
 
@@ -56,8 +64,14 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function animalNames(zooArray){
+    let displayNames = [];
+    
+    zooArray.forEach(function(item){
+        displayNames.push(`name: ${item.animal_name}, scientific: ${item.scientific_name}`);
+    })
+
+    return displayNames;
   }
   
 
@@ -67,7 +81,7 @@ const zooAnimals = [
   For example: ['jackal, asiatic', .....]
   */
 
-  function lowerCaseNames(/*Your Code Here*/){
+  function lowerCaseNames(zooArray){
     /*Your Code Here*/
   }
   
