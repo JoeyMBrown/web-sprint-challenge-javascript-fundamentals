@@ -38,7 +38,8 @@ Edit this document to include your answers after each question. Make sure to lea
 
 3. Can you explain what a closure is and how you used it in the counter function? 
 
-    A closure is when a nested function reaches out of it's function scope to an outer function scope to reference a variable.
+    A closure is when a nested function reaches out of it's function scope to an outer function scope to reference a variable.  We use a closure in the counter function 
+    to ensure our counter variable is stored after the counter function is ran, rather than being deleted.
 
 4. Describe the four principles of the 'this' keyword.
 

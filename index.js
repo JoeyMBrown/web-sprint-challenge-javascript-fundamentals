@@ -16,7 +16,7 @@ function myFunction() {
 myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-// 1. The nested function is able to access the variable internal because it is a closure.  Scope allows us to reach "up" to reference variables but not down.
+// 1. The nested function is able to access the variable `internal` because it is a closure.  Scope allows us to reach "up" to reference variables but not down.
 
 
 
